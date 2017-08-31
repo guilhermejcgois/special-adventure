@@ -14,33 +14,33 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "atlasmongo"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "atlasmongo",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "atlasmongo",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "atlasmongo",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "atlasmongo",
     "public": false
   },
   "Product": {
-    "dataSource": "db",
+    "dataSource": "atlasmongo",
     "public": true
   },
   "Category": {
-    "dataSource": "db",
+    "dataSource": "atlasmongo",
     "public": true
   }
 }

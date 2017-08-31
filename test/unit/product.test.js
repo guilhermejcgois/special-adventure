@@ -43,7 +43,7 @@ describe('validation', function () {
       .then(() => Product.create({ name: 'abc', price: 299 }))
       .then(res => Promise.reject('Product should not be created'))
       .catch(err => {
-        expect(err.message).to.contain('Detalhes: `name` is not unique')
+        expect(err.message).to.contain('`name` is not unique')
         expect(err.statusCode).to.be.equal(422)
       })
   })

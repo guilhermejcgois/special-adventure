@@ -38,7 +38,10 @@
       "principalType": "ROLE",
       "principalId": "$unauthenticated",
       "permission": "ALLOW",
-      "property": ["find", "buy"]
+      "property": [
+        "find",
+        "buy"
+      ]
     }
   ],
   "methods": {

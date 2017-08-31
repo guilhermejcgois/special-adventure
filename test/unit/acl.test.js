@@ -5,6 +5,7 @@ describe('ACL', function() {
     it('should return 200 when listing categories', function() {
       return request
         .get('/api/categories')
+        .set('AccessToken', 'mudar1234')
         .expect(200);
     })
 
@@ -59,9 +60,10 @@ describe('ACL', function() {
     it('should return 200 when buying a product', function() {
       return app.models.Product.create({ name: 'test', price: 100 })
         .then(res => request
-          .post(`/api/products/${res.id}/buy`))
+          .post(`/api/products/${res.id}/buy`)
           .send({ quantity: 200 })
-          .expect(200);
+          .expect(200)
+        );
     })
   })
 })
